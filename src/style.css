@@ -12,35 +12,35 @@
   -webkit-text-size-adjust: 100%;
 }
 
-.vertical-line {
-  width: 2px;
-  height: 100vh;
-  background-color: white;
+.line {
   position: absolute;
   left: 50%;
   top: 0;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background-color: white;
 }
 
 .wrapper {
+  position: relative;
   display: flex;
   justify-content: space-around;
-  position: relative;
 }
 
 .image-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Start alignment for the left side */
-  padding: 1em;
+  align-items: flex-start;
 }
 
 .image-container:nth-child(odd) {
-  align-items: flex-end; /* End alignment for the right side */
+  align-items: flex-end;
 }
 
 .image-container img {
   max-width: 10rem;
-  margin-bottom: 1em; /* Spacing between images */
+  margin-bottom: 1rem; /* Spacing between images */
 }
 
 /* Add any additional styling you need for your images here */
