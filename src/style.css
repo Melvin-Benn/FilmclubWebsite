@@ -22,10 +22,16 @@
   background-color: white;
 }
 
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
 .wrapper {
   position: relative;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
 }
 
 .image-container {
@@ -34,13 +40,26 @@
   align-items: flex-start;
 }
 
-.image-container:nth-child(odd) {
+.film {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2rem;
+}
+
+.film:nth-child(odd) .content {
+  order: -1;
+  display: flex;
+  flex-direction: column;
   align-items: flex-end;
 }
 
-.image-container img {
+.image-container {
   max-width: 10rem;
-  margin-bottom: 1rem; /* Spacing between images */
+}
+
+.image-container img {
+  width: 100%;
 }
 
 /* Add any additional styling you need for your images here */
