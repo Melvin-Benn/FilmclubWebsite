@@ -21,7 +21,7 @@ function movieTemplate(movie: Movie) {
 function appendMovies() {
   const wrapper = document.querySelector<HTMLDivElement>('.wrapper');
   if (!wrapper) return;
-  data.movies.forEach(movie => {
+  data.movies.reverse().forEach(movie => {
     const movieString = movieTemplate(movie);
     const template = document.createElement('template');
     template.innerHTML = movieString;
