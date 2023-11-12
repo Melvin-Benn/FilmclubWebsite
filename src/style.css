@@ -14,7 +14,7 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('../public/font/MADEINFINITYPersonalUse-Regular.woff2') format('woff2');
+  src: url('/font/MADEINFINITYPersonalUse-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -22,7 +22,7 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('../public/font/MADEINFINITYPersonalUse-Medium.woff2') format('woff2');
+  src: url('/font/MADEINFINITYPersonalUse-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -30,7 +30,7 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('../public/font/MADEINFINITYPersonalUse-Light.woff2') format('woff2');
+  src: url('/font/MADEINFINITYPersonalUse-Light.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -38,7 +38,7 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('../public/font/MADEINFINITYPersonalUse-Black.woff2') format('woff2');
+  src: url('/font/MADEINFINITYPersonalUse-Black.woff2') format('woff2');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -46,12 +46,11 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('../public/font/MADEINFINITYPersonalUse-Thin.woff2') format('woff2');
+  src: url('/font/MADEINFINITYPersonalUse-Thin.woff2') format('woff2');
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
-
 
 p {
   margin: 0;
