@@ -14,9 +14,11 @@ function movieTemplate(movie: Movie) {
     <div class="content">
       <p class="title">${movie.title}</p>
       <p class="date">${movie.date}</p>
+      <p class="rating">Filmclub Rating: ${movie.rating}</p>
     </div>
   </div>`;
 }
+
 
 function appendMovies() {
   const wrapper = document.querySelector<HTMLDivElement>('.wrapper');
