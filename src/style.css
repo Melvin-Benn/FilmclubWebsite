@@ -14,10 +14,42 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('font/MADEINFINITYPersonalUse-Light.otf') format('otf'), /* Pfade zu den tatsächlichen Schriftart-Dateien anpassen */
-       url('font/MADEINFINITYPersonalUse-Black.otf') format('otf');
-  font-weight: 400;
+  src: url('../public/font/MADEINFINITYPersonalUse-Regular.woff2') format('woff2');
+  font-weight: normal;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../public/font/MADEINFINITYPersonalUse-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../public/font/MADEINFINITYPersonalUse-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../public/font/MADEINFINITYPersonalUse-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../public/font/MADEINFINITYPersonalUse-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }
 
 
@@ -64,24 +96,18 @@ header {
   flex-direction: column;
   gap: 0.5rem;
   margin-top: 0.5rem;
-  
 }
 
 .film .content .title {
-  font-family: 'Inter', sans-serif; /* Falls 'Inter' nicht verfügbar ist, fällt es auf die generische sans-serif-Schriftart zurück */
-  font-weight: 900; /* Schwarze Version der Schriftart für den Titel */
+  font-weight: 600;
   font-size: 24px;
 }
 
 .film .content .date {
-  font-family: 'Inter', sans-serif;
-  font-weight: 300;
   color: #999999;
 }
 
 .film .content .rating {
-  font-family: 'Inter', sans-serif;
-  font-weight: 300;
   color: #999999;
 }
 
