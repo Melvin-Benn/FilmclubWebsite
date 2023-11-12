@@ -1,24 +1,32 @@
 import './style.css'
-import typescriptLogo from './typescript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.ts'
+import * as data from './movies.json';
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
+type Movie = typeof data.movies[0];
+
+function movieTemplate(movie: Movie) {
+  return `
+  <div class="film">
+    <div class="image-outer">
+      <div class="image-inner">
+        <img src="/cover/${movie.image}" alt="Beschreibung des Bildes" />
+      </div>
     </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
+    <div class="content">
+      <p class="title">${movie.title}</p>
+      <p class="date">${movie.date}</p>
+    </div>
+  </div>`;
+}
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+function appendMovies() {
+  const wrapper = document.querySelector<HTMLDivElement>('.wrapper');
+  if (!wrapper) return;
+  data.movies.forEach(movie => {
+    const movieString = movieTemplate(movie);
+    const template = document.createElement('template');
+    template.innerHTML = movieString;
+    wrapper.appendChild(template.content.cloneNode(true));
+  })
+}
+
+appendMovies();
