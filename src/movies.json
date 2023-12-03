@@ -4,25 +4,41 @@
         {
             "title": "Four Rooms",
             "date": "23.09.23",
-            "image": "fourrooms.jpg",
+            "image": {
+                "src": "fourrooms.jpg",
+                "width": 868,
+                "height": 1280
+            } ,
             "rating": 6.5
         },
         {
             "title": "Rashomon",
             "date": "08.10.23",
-            "image": "rashomon.jpg",
+            "image": {
+                "src": "rashomon.jpg",
+                "width": 2000,
+                "height": 3000
+            } ,
             "rating": 6.5
         },
         {
             "title": "Chungking Express",
             "date": "11.10.23",
-            "image": "chungkingexpress.jpg",
+            "image": {
+                "src": "chungkingexpress.jpg",
+                "width": 663,
+                "height": 856
+            } ,
             "rating": 6.5
         },
         {
             "title": "The Chaser",
             "date": "01.11.23",
-            "image": "chaser.jpg",
+            "image": {
+                "src": "chaser.jpg",
+                "width": 1056,
+                "height": 1500
+            } ,
             "rating": 6.5
         }
     ]

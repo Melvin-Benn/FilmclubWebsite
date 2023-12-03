@@ -121,11 +121,8 @@ header {
 }
 
 .image-inner {
+  position: relative;
   border-radius: 6px;
-  overflow: hidden;
-  max-width: 10rem;
+  width: 160px;
 }
 
-.image-inner img {
-  width: 100%;
-}
