@@ -3,8 +3,8 @@
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: black;
+  color: 3f3f3f;
+  background-color: f4f4f4;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -14,7 +14,7 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('/font/MADEINFINITYPersonalUse-Regular.woff2') format('woff2');
+  src: url('/font/CreatoDisplay-Light.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -22,7 +22,7 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('/font/MADEINFINITYPersonalUse-Medium.woff2') format('woff2');
+  src: url('/font/CreatoDisplay-Thin.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -30,7 +30,7 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('/font/MADEINFINITYPersonalUse-Light.woff2') format('woff2');
+  src: url('/font/CreatoDisplay-Thin.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -38,7 +38,7 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('/font/MADEINFINITYPersonalUse-Black.woff2') format('woff2');
+  src: url('/font/CreatoDisplay-Light.woff2') format('woff2');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -46,7 +46,7 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('/font/MADEINFINITYPersonalUse-Thin.woff2') format('woff2');
+  src: url('/font/CreatoDisplay-Thin.woff2') format('woff2');
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -103,11 +103,11 @@ header {
 }
 
 .film .content .date {
-  color: #999999;
+  
 }
 
 .film .content .rating {
-  color: #999999;
+  
 }
 
 .film:nth-child(odd) .content {
